@@ -13,7 +13,7 @@ public class HelloWorldMain {
 		sh.setInitParameter("com.sun.jersey.config.property.packages", "jcarmena.learning.rest");
 		sh.setInitParameter("com.sun.jersey.api.json.POJOMappingFeature", "true");
 		
-		Server server = new Server(9999);
+		Server server = new Server(8080);
 		ServletContextHandler context = new ServletContextHandler(server, "/api", ServletContextHandler.SESSIONS);
 		context.addServlet(sh, "/*");
 		
